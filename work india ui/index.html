@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {background-color: #9933ff;}
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  position: relative;
+  background-color: #ffff80;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #ffff00;
+  color: black;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+.show{
+	display: inline-block;
+	padding: 80px;
+	margin:10px;
+	background-color:#d9b3ff;
+	color: black; 
+	width:100px;
+	heigh:300px;
+}
+div {
+  word-wrap: break-word;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+header{
+	margin:0px;
+	padding:0px;
+}
+</style>
+</head>
+<header>
+	<center>
+	<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#notes">Show Notes</a></li>
+	<li><a href="add Notes.html">Add Notes</a></li>
+</ul>
+</center>
+</header>
+<body>
+	<center>
+<div class="show" id="myBtn">
+	<h1 style="font-size: 40px;">Title</h1><br>
+	<p style=" word-wrap: break-word;">This is a short description form the notefesdfsedfgvedsegvedsefgvesdgfvgesfgveds</p>
+</div>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <center>
+      <h2>Attend meeting</h2>
+  </center>
+    </div>
+    <div class="modal-body">
+    	<center>
+      <p>Need to attend meeting</p>
+      <p>work india</p>
+  </center>
+    </div>
+  </div>
+
+</div>
+<div class="show" id="myBtn1">
+	<h1 style="font-size: 40px;">Title</h1><br>
+	<p style=" word-wrap: break-word;">This is a short description form the notefesdfsedfgvedsegvedsefgvesdgfvgesfgveds</p>
+</div>
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <center>
+      <h2>Attend meeting</h2>
+  </center>
+    </div>
+    <div class="modal-body">
+    	<center>
+      <p>Need to attend meeting</p>
+      <p>work india</p>
+  </center>
+    </div>
+  </div>
+
+</div>
+<div class="show" id="myBtn2">
+	<h1 style="font-size: 40px;">Title</h1><br>
+	<p style=" word-wrap: break-word;">This is a short description form the notefesdfsedfgvedsegvedsefgvesdgfvgesfgveds</p>
+</div>
+<div id="myModal2" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <center>
+      <h2>Attend meeting</h2>
+  </center>
+    </div>
+    <div class="modal-body">
+    	<center>
+      <p>Need to attend meeting</p>
+      <p>work india</p>
+  </center>
+    </div>
+  </div>
+
+</div>
+</center>
+<script>
+var modal = document.getElementById("myModal");
+var modal1 = document.getElementById("myModal1");
+var modal2 = document.getElementById("myModal2");
+var btn = document.getElementById("myBtn");
+var btn1 = document.getElementById("myBtn1");
+var btn2 = document.getElementById("myBtn2");
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+   if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+   if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
